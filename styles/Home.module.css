@@ -3,8 +3,117 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: "relative";
   padding: 6rem;
+  padding-top: 2rem;
   min-height: 100vh;
+  font-family: var(--font-mono);
+}
+
+.currentAlbumContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: "relative";
+  max-width: fit-content;
+  width: 100%;
+  margin: 1rem;
+  margin-bottom: 4rem;
+  padding: 3rem;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.currentAlbumContainer p {
+  margin: 5px 0px;
+}
+
+.currentAlbumImage {
+  object-fit: "contain";
+  margin-bottom: 5px;
+  max-height: 316px;
+  max-width: 316px;
+  height: 316px;
+  width: 316px;
+
+}
+
+.currentAlbumName {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.currentArtist {
+  font-size: large;
+  font-weight: bold;
+}
+
+.currentAlbumLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: 0px 10px;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+}
+
+.currentAlbumLinks {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.prevAlbumContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 175px;
+  font-size: 1rem;
+  max-width: 70%;
+  width: 100%;
+  z-index: 2;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+  text-align: left;
+}
+
+.prevAlbumInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  margin: 10px;
+}
+
+.prevAlbumInfo p{
+  margin-bottom: 5px;
+}
+
+.previousAlbumLink {
+  padding: 1rem;
+  margin: 10px;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+}
+
+.previousAlbumLinks {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .description {
@@ -177,6 +286,29 @@
 @media (max-width: 700px) {
   .content {
     padding: 4rem;
+  }
+
+  .main {
+    padding: 2rem;
+  }
+
+  .currentAlbumImage {
+    height: 150px;
+    width: 150px;
+  }
+
+  .prevAlbumContainer {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .previousAlbumLinks {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   .grid {
