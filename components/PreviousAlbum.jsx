@@ -10,15 +10,16 @@ export default function PreviousAlbum({albumName, artist, submittedBy, albumPict
 
   return (
     <div className={styles.prevAlbumContainer}>
-        <Image
-            src={albumPicture}
-            alt={`${albumName} by ${artist} album cover`}
-            className={styles.vercelLogo}
-            width={150}
-            height={150}
-            priority
-            unoptimized //remove this
-        />
+        <div className={styles.prevAlbumImage} style={{position: 'relative'}}>
+            <Image
+                src={albumPicture}
+                alt={`${albumName} by ${artist} album cover`}
+                className={styles.vercelLogo}
+                fill
+                priority
+                unoptimized //remove this
+            />
+        </div>
         <div className={styles.prevAlbumInfo}>
             <p className={styles.previousAlbumName}>
                 {albumName}

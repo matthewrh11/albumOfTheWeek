@@ -116,6 +116,17 @@
   justify-content: space-evenly;
 }
 
+.prevAlbumImage {
+  object-fit: "contain";
+  margin-bottom: 5px;
+  max-height: 150px;
+  max-width: 150px;
+  min-height: 150px;
+  min-width: 150px;
+  height: 150px;
+  width: 150px;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
