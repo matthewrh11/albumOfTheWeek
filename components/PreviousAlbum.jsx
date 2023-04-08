@@ -14,7 +14,6 @@ export default function PreviousAlbum({albumName, artist, submittedBy, albumPict
             <Image
                 src={albumPicture}
                 alt={`${albumName} by ${artist} album cover`}
-                className={styles.vercelLogo}
                 fill
                 priority
                 unoptimized //remove this
